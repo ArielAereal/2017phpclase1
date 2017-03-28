@@ -17,73 +17,14 @@ echo date("l jS \of F Y e h:i:s A")."<br><br> ";
 
 $dia = date ("l");
 
-switch ($dia)
-{
-    case "Monday":
-                    echo ("lunes");
-                    break;
-    case "Tuesday":
-                    echo ("martes");
-                    break;
-    case "Wednesday":
-                        echo ("miércoles");
-                        break;
-    case "Thursday":
-                    echo ("jueves");
-                    break;
-    case "Friday":
-                    echo ("viernes");
-                    break;
-    case "Saturday":
-                        echo ("sábado");
-                    break;
-    case "Sunday":                
-                    echo ("domingo");
-                    break;
-}
+Translate_Dia($dia);
 
 echo date(" j "). "de ";
 
 $mes = date("F");
-switch ($mes)
-{
-    case "January":
-                    echo ("enero");
-                    break;
-    case "February":
-                    echo ("febrero");
-                    break;
-    case "March":
-                    echo ("marzo");
-                    break;
-    case "April":
-                    echo ("abril");
-                    break;
-    case "May":
-                    echo ("mayo");
-                    break;
-    case "June":
-                    echo ("junio");
-                    break;
-    case "July":                
-                    echo ("julio");
-                    break;
-    case "August":                
-                    echo ("agosto");
-                    break;
-    case "September":                
-                    echo ("septiembre");
-                    break;
-    case "October":                
-                    echo ("octubre");
-                    break;
-    case "November":                
-                    echo ("noviembre");
-                    break;
-    case "December":                
-                    echo ("diciembre");
-                    break;                                                                                
-}
+
+Translate_Mes($mes);
+
 echo date (" Y ");
 
 $zonah = date("e");
@@ -95,81 +36,21 @@ if ($zonah == "America/Buenos_Aires")
 
 echo date (" H:i")."<br><br>";
 
-// recontra código repetido, me fijo de hacerlo bien
-
 $dia = date ("l");
 
-switch ($dia)
-{
-    case "Monday":
-                    echo ("lunes");
-                    break;
-    case "Tuesday":
-                    echo ("martes");
-                    break;
-    case "Wednesday":
-                        echo ("miércoles");
-                        break;
-    case "Thursday":
-                    echo ("jueves");
-                    break;
-    case "Friday":
-                    echo ("viernes");
-                    break;
-    case "Saturday":
-                        echo ("sábado");
-                    break;
-    case "Sunday":                
-                    echo ("domingo");
-                    break;
-}
+Translate_Dia($dia);
 
 echo date(" j "). "de ";
 
 $mes = date("F");
-switch ($mes)
-{
-    case "January":
-                    echo ("enero");
-                    break;
-    case "February":
-                    echo ("febrero");
-                    break;
-    case "March":
-                    echo ("marzo");
-                    break;
-    case "April":
-                    echo ("abril");
-                    break;
-    case "May":
-                    echo ("mayo");
-                    break;
-    case "June":
-                    echo ("junio");
-                    break;
-    case "July":                
-                    echo ("julio");
-                    break;
-    case "August":                
-                    echo ("agosto");
-                    break;
-    case "September":                
-                    echo ("septiembre");
-                    break;
-    case "October":                
-                    echo ("octubre");
-                    break;
-    case "November":                
-                    echo ("noviembre");
-                    break;
-    case "December":                
-                    echo ("diciembre");
-                    break;                                                                                
-}
+
+Translate_Mes($mes);
 
 echo date (" H:i")."<br><br>";
 
 //tira error en el switch, revisar otra vez (faltaba cerrar la última llave del if de diciembre)
+
+// podría sobrecargar el método translate mes, pero no tengo la clase para hacerlo
 
 switch($mes)
 {
@@ -233,10 +114,78 @@ switch($mes)
                         echo("Estamos en verano.");
                     }
                     break;
+    }
+
+function Translate_Dia ($dia)
+{
+    switch ($dia)
+    {
+    case "Monday":
+                    echo ("lunes");
+                    break;
+    case "Tuesday":
+                    echo ("martes");
+                    break;
+    case "Wednesday":
+                        echo ("miércoles");
+                        break;
+    case "Thursday":
+                    echo ("jueves");
+                    break;
+    case "Friday":
+                    echo ("viernes");
+                    break;
+    case "Saturday":
+                        echo ("sábado");
+                    break;
+    case "Sunday":                
+                    echo ("domingo");
+                    break;
+    }
+
 }
 
+function Translate_Mes($mes)
+{
+switch ($mes)
+{
+    case "January":
+                    echo ("enero");
+                    break;
+    case "February":
+                    echo ("febrero");
+                    break;
+    case "March":
+                    echo ("marzo");
+                    break;
+    case "April":
+                    echo ("abril");
+                    break;
+    case "May":
+                    echo ("mayo");
+                    break;
+    case "June":
+                    echo ("junio");
+                    break;
+    case "July":                
+                    echo ("julio");
+                    break;
+    case "August":                
+                    echo ("agosto");
+                    break;
+    case "September":                
+                    echo ("septiembre");
+                    break;
+    case "October":                
+                    echo ("octubre");
+                    break;
+    case "November":                
+                    echo ("noviembre");
+                    break;
+    case "December":                
+                    echo ("diciembre");
+                    break;                                                                                
+}
 
-
-
-
+}
 ?>
