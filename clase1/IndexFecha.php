@@ -1,6 +1,6 @@
 <?php
 
-echo "Ejercicio Nº 2 <br><br>";
+echo "Ejercicio Nº 2 <br> <br>";
 
 $dia;
 $mes;  
@@ -9,17 +9,15 @@ $nummes = date("j");
 
 date_default_timezone_set("America/Buenos_Aires");
 
-// echo date("t"); la t me da el total de dias del mes de la funcion date, en marzo tira 31
+echo date("d/m/y") ."<br> <br>";
 
-echo date("d/m/y")."<br><br>";
-
-echo date("l jS \of F Y e h:i:s A")."<br><br> ";
+echo date("l jS \of F Y e h:i:s A") ."<br><br> ";
 
 $dia = date ("l");
 
 Translate_Dia($dia);
 
-echo date(" j "). "de ";
+echo date(" j ") . "de ";
 
 $mes = date("F");
 
@@ -32,9 +30,10 @@ $zonah = date("e");
 if ($zonah == "America/Buenos_Aires")
 {
     echo "Buenos Aires, Argentina ";
+
 } else{ echo date("e");}
 
-echo date (" H:i")."<br><br>";
+echo date (" H:i")."<br> <br>";
 
 $dia = date ("l");
 
@@ -47,10 +46,6 @@ $mes = date("F");
 Translate_Mes($mes);
 
 echo date (" H:i")."<br><br>";
-
-//tira error en el switch, revisar otra vez (faltaba cerrar la última llave del if de diciembre)
-
-// podría sobrecargar el método translate mes, pero no tengo la clase para hacerlo
 
 switch($mes)
 {
