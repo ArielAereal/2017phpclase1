@@ -1,6 +1,6 @@
 <?php
   
-echo "Ejercicio N°1 <br> <br>";            
+echo "Ejercicio N° 1 <br> <br>";            
 
 // otra idea es utilizar una variable auxiliar, y si se pasa de mil, romper y fue. Se me ocurrió después...
 $i;

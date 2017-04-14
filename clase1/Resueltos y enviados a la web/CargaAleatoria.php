@@ -1,13 +1,10 @@
 <?php
 
-echo "Ejercicio Nº6";
-
-
-include "apoyocalculo.php";
-
+echo "Ejercicio Nº6 <br> <br>";
+//indexado
 $arraydenumeros = array(rand(1,99), rand(160,514),rand(1,10),rand(18,99),rand(-100,100));
-
-$dosa = array("15" => rand(-20,8), "37"=> rand(1,11), "-9"=> rand(0,10), "-12500"=> rand(15,17), "49"=> rand(1,28));
+//asociativo
+$dosa = array(15.8 => rand(-20,8), true=> rand(1,11), false=> rand(0,10), "Anita"=> rand(15,17), "Manzana 49"=> rand(1,28));
 
 $promedio=0;
 $prodos = 0;
@@ -37,16 +34,28 @@ foreach ($dosa as $x => $xvalor)
 $promedio = $promedio/count($arraydenumeros);
 $prodos = $prodos/count($dosa);
 
-var_dump($promedio);
 echo "<br><br>";
-
-echo $promedio;
-echo "<br><br>";
+echo "El promedio del primer bloque de datos es: ";
 
 calcular_promedio_seis($promedio);
 
-echo "<br><br>";
+echo "<br><br> El promedio del segundo bloque de datos es: ";
 
 calcular_promedio_seis($prodos);
+
+function calcular_promedio_seis($promedio)
+{
+    if ($promedio == 6 )
+    {
+        echo "SEIS";
+    } elseif ($promedio < 6)
+    {
+        echo "MENOR A SEIS";
+    } else
+    {
+    echo "MAYOR A SEIS";
+    }
+
+}
 
 ?>
