@@ -10,10 +10,10 @@ for ($i=0;$i<5;$i+1)
 {
     $aleat= rand(0,7);
 
-    $carga=array($i,$aleat);
+    $carga=array($aleat);
 }
 
-var_dump($carga)
+var_dump($carga);
 
 
 // ver foreach
