@@ -1,15 +1,8 @@
 <?php
+    // teoria clase dos
     // pego cualquier cosa, los parentesis no hacen falta
-    require "funciones.php"; // require produce un fatal error, el include da warning y sigue
-
-    // require "Noexiste.php";
-
-    require_once "funciones.php";
-
-    $resultado =  sumar(2,3);
-
-    var_dump($resultado); // si pongo echo, no muestra nada. El var_dump muestra el valor de la variable
-
+   # require produce un fatal error, el include da warning y sigue
+   
     //ver desarrollos completos de ajax y php.
 
     include "calculadora.php";

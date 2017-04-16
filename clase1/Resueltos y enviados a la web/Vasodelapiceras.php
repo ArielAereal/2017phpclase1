@@ -2,6 +2,9 @@
 
 echo "Ejercicio Nº 10 <br> <br>";
 
+# etiquetas para ordenar el var_dump y el print_r
+
+
 $i = 0;
 $elconte;
 
@@ -22,6 +25,11 @@ array_push($vasoindex,$lapicerauno);
 // lapicera dos
 $vasoindex[2] = array('color'=>'negra','marca'=>'silvapen','trazo'=>'grueso','precio'=>20); 
 
+# etiquetas para ordenar el var_dump y el print_r
+echo ('<pre>');
+var_dump($vasoindex);
+echo('</pre');
+
 $vasoasociado = array
 (
     "Cara"=> array(),
@@ -35,9 +43,9 @@ array_push($vasoasociado['Masomeno'],array('color'=>'gris','marca'=>'bic','trazo
 // mostrar los arrayes
 // acordate que es una matriz
 
-echo "<br> Muestra: <br><br>";
+echo "<br><br> Muestra: <br><br>";
 
-echo "INDEXADO: <br><br>";
+/*echo "INDEXADO: <br><br>";
 
 $elconte= count($vasoindex);
 
@@ -61,6 +69,6 @@ function MostrarArrayMulti($arrayes)
     {
         echo "Atributo: $key Valor: $value <br><br>";
     }
-}
+}*/
 
 ?>
