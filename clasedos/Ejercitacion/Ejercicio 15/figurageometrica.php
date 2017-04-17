@@ -1,36 +1,28 @@
 <?php
-
-    /**
-     * 
-     */
+    
     abstract class figurageometrica
-    {
-        // public?
+    {        
         public function __construct()
         {
             
-            # code...
         }
 
         protected $_color;
         protected $_perimetro;
-        protected $_superficie;
-
-        // ver propiedades
-
-        //ver modificadores de get y set
+        protected $_superficie;        
+        
+        // get
         public function obtenercolor()
         { return $this->_color; }
-
+        // set
         public function establecercolor($elcolor)
-        {$this->color = $elcolor;}
-
-        // virtual
-        public function  ToString()
+        {$this->_color = $elcolor;}
+        
+        public function ToString()
         {
-            echo $_color;
-            echo $_perimetro;
-            echo $_superficie;
+            echo "<br> Color: " . $this->_color . "<br>";
+            echo "<br> Perímetro: " . $this->_perimetro;
+            echo "<br> Superficie: " . $this->_superficie;
             
         }
 
@@ -38,7 +30,7 @@
 
         protected abstract function CalcularDatos();
                 
-    }
+        }
     
 
 ?>

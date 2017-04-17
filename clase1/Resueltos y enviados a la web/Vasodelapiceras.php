@@ -45,7 +45,7 @@ array_push($vasoasociado['Masomeno'],array('color'=>'gris','marca'=>'bic','trazo
 
 echo "<br><br> Muestra: <br><br>";
 
-/*echo "INDEXADO: <br><br>";
+echo "INDEXADO: <br><br>";
 
 $elconte= count($vasoindex);
 
@@ -69,6 +69,6 @@ function MostrarArrayMulti($arrayes)
     {
         echo "Atributo: $key Valor: $value <br><br>";
     }
-}*/
+}
 
 ?>

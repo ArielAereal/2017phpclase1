@@ -1,6 +1,8 @@
 <?php
 
-echo "Ejercicio Nº 2 <br> <br>";
+echo "<br>Un día, a la hora señalada, la señorita Fecha me preguntó:<br>¿Con qué vestido me veo mejor en esta estación del año?";
+
+echo "<br><br>Ejercicio Nº 2 <br> <br>";
 
 $dia;
 $mes;  

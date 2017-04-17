@@ -1,6 +1,7 @@
 <?php
+    echo "<br>Existe una calculadora <br>que calcula sin parar,<br>cada vez la veo<br> sumar, restar, dividir o multiplicar.";
 
-    echo "Ejercicio Nº 4 <br> <br>";
+    echo "<br><br>Ejercicio Nº 4 <br> <br>";
     
     /* Operador debería almacenar + - * / pero el random tiene un estilo mejorado. La salida no depende del operador, sino
        que solamente afecta a la entrada del switch*/
