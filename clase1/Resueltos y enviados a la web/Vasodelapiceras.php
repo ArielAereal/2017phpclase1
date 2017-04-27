@@ -1,5 +1,5 @@
 <?php
-
+echo "Me encontré un vaso con seis lapiceras. Tres agrupadas del uno al tres, y otras tres de la más cara a la más barata: <br> <br> ";
 echo "Ejercicio Nº 10 <br> <br>";
 
 # etiquetas para ordenar el var_dump y el print_r

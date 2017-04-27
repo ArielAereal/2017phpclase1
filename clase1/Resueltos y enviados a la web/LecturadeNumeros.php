@@ -1,4 +1,6 @@
 <?php
+
+        echo " Imaginate la gallega del GPS leyendo el número de abajo: <br> <br>";
     echo "Ejercicio Nº 5 <br> <br>";
 
     $num = rand(20,60);

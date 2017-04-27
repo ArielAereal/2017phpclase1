@@ -1,4 +1,7 @@
 <?php
+
+echo " Preguntamos: ¿los números negativos también son impares?<br><br>";
+
 echo "Ejercicio Nº 7 <br> <br>";
 $Imparera = array();
 $i;

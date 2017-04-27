@@ -1,4 +1,7 @@
 <?php
+
+echo "Me encontré tres lapiceras, ¿a ver cómo son?<br><br>";
+
 echo "Ejercicio Nº 9 <br> <br>";
 
 $lapicerauno= array('color'=>'gris','marca'=>'bic','trazo'=>'grueso','precio'=>10);

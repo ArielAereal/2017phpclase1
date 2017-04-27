@@ -1,4 +1,7 @@
 <?php
+
+    echo " Cuando se repite un número, ¿cuál es el valor del medio? <br> <br>";
+
         echo "Ejercicio Nº 3 <br> <br>";
         
         $a= rand(0,10); 
