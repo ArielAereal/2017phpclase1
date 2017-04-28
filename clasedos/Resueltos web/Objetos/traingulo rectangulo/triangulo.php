@@ -5,7 +5,7 @@ class triangulo extends figurageometrica
     protected $altura;
     protected $base;     
 
-    function __construct($altura,$base)
+   public function __construct($altura,$base)
     {
         parent::__construct();
         $this->altura = $altura;

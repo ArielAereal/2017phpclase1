@@ -5,7 +5,7 @@ class rectangulo extends figurageometrica
     protected $ladoflaco;
     protected $ladogordo;     
 
-    function __construct($altura,$base)
+   public function __construct($altura,$base)
     {
         parent::__construct();
         $this->ladoflaco = $altura;
