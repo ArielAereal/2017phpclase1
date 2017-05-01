@@ -27,6 +27,7 @@ class Auto
     public function __call($Auto, $argumentos)    
     {}
 
+    //las propiedades, sobran?
     public function Precio()
     {
         return $this->_precio;

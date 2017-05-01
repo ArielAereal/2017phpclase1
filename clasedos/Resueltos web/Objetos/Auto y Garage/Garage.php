@@ -24,6 +24,7 @@
         public function __call($__construct,$parametros)
         {}
 
+        //las propiedades sobran, no?
         public function ObtenerRazon()
         {
             return $this->_razonSocial;
@@ -63,8 +64,10 @@
             }
             
         }
-              public function Equals($autoacomparar)
-    {
+
+        //ver que esta funcion devuelve v o f con una  variable distinta (no desde el foreach)
+        public function Equals($autoacomparar)
+         {
         $igualdad = false;
         foreach($this->_autos as $valor)
         {
@@ -91,8 +94,7 @@
         
         public function Add($unAuto)
         {
-
-            
+           
             if($this->Equals($unAuto) == true)
             {
                 
@@ -103,25 +105,26 @@
         }
 
   
-
     public function Remove($unAuto)
     {
-        $i=0;
-        $indice;
+        $i=0;       
+
             if($this->Equals($unAuto)== true)
             {
-                foreach($this->_autos as $valor)
-                {
-                    if ($valor->Equals($unAuto))
+                for ($i=0; $i < count($this->_autos) ; $i++) 
+                { 
+                    if($unAuto == $this->_autos[$i])
                     {
-                        $indice = array_keys($this->_autos, $this->_autos[$i]);
-                        
-                        //var_dump($indice);
+        
+                        //SOLUCION
+                         unset($this->_autos[$i]);                            
+                        break;
                     }
-                    $i++;
                 }
+                
                 // el implode me transforma el array en un string, con el separador o pegamento nulo en este caso
-                array_splice($this->_autos, implode("",$indice));
+                // borrando el indice 0 me borra todo con el splice (sin reemplazar)           
+
                 
             } else {echo "El auto buscado no estaba en el garage<br>";}
     }
