@@ -4,8 +4,8 @@ echo "Ejercicio Nº 17 <br> <br>";
 
 require "Auto.php";
 // uno
-$unauto = new Auto("Ford Ka","Champán");
-$tresauto = new Auto("Ford Ka","Azul");
+$unauto = new Auto("Ford Ka","Champán",15,50);
+$tresauto = new Auto("Ford Ka","Azul",16);
 //dos
 $otroauto = new Auto("Clio","Gris",75000);
 $otroautodos = new Auto("Clio","Gris",65000);
