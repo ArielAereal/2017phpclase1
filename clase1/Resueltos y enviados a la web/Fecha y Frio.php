@@ -36,7 +36,7 @@ ver hemisferios
 
 echo "<br>Un día, a la hora señalada, la Señorita Fecha me preguntó:
 <br>¿Con qué vestido me veo mejor en esta Estación de trenes?";
-echo "<br><br>Aplicación Nº 2 <br> <br>";
+echo "<br><br>Aplicación Nº 2 - Fecha y estación del año <br> <br>";
 
 $dia;
 $mes;  
